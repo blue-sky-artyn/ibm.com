@@ -1,0 +1,551 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
+<html lang="en" class=" js csstransitions desktop portrait csstransforms csstransforms3d">
+<head runat="server">
+
+    <%--<base href="https://www.bondelectric.ca/" />--%>
+    <!-- [if lte IE 6]></base><![endif] -->
+
+    <title>COVID-19 Screen test</title>
+
+    <!-- Basic -->
+    <%--<meta charset="utf-8">--%>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <meta name="keywords" content="bond electric and bondelectric and Bondelectric and Bond electric designs and manufactures interior and exterior lighting  products for a wide range of applications including offices, retail, schools and municipalities. bondelectric, bond electric, commercial electric powerline, residential electric powerline, industrial electric powerline, commercial electric power line, residential electric power line, industrial electric power line, commercial electrical service, residential electrical service, industrial electrical service, commercial electrician, residential electrician, industrial electrician, commercial electrical, residential electrical, industrial electrical">
+    <meta name="description" content="Bond electric Inc (Bondelectric) - bondelectric and bond electric - Looking for Licensed Electrician in Toronto, Richmond Hill, Markham, East York Certified Electrician serving Toronto, Richmond Hill, Markham &amp; East York, industrial, commercial and residential electrical service and power line, EV charger, Installation of car charger, generators, transformers and appliances. Install breakers, three phase and single phase motors, disconnect switches, fuses, conductors, meters and hardware. Running EMT and PVC conduit and wire for commercial and residential units. Diagnose cause of electrical malfunction and failure of operational.Change old lighting system (fluorescent) to LED and getting government rebates">
+    <meta name="author" content="Farhad Taheri">
+    <meta name="generator" content="Artyn Company - http://artynir" />
+    <meta name="Robots" content="index, follow" />
+
+
+
+    <%-- google analitic --%>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RMFXNYRFCG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RMFXNYRFCG');
+    </script>
+
+    <!-- Google Analytics -->
+    <%--<script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        
+        ga('send', 'pageview');
+    </script>--%>
+    <!-- End Google Analytics -->
+
+    <%-- Tag Manager --%>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TSPJHVH');</script>
+    <!-- End Google Tag Manager -->
+
+    <%-- ORIBI Validator --%>
+    <script type="application/javascript">
+        (function (b, o, n, g, s, r, c) { if (b[s]) return; b[s] = {}; b[s].scriptToken = "Xy04ODU2NzAxMTA"; b[s].callsQueue = []; b[s].api = function () { b[s].callsQueue.push(arguments); }; r = o.createElement(n); c = o.getElementsByTagName(n)[0]; r.async = 1; r.src = g; r.id = s + n; c.parentNode.insertBefore(r, c); })(window, document, "script", "https://cdn.oribi.io/Xy04ODU2NzAxMTA/oribi.js", "ORIBI");
+    </script>
+
+    <%-- google web master validator --%>
+    <meta name="google-site-verification" content="pjHP2VMP5z8OEuw7qW_0yJlV8QKB1BEx6NhSOXAmpPs" />
+
+
+    <link rel="canonical" href="https://www.bondelectric.ca/" />
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:url" content="http://bondelectric.ca/" />
+    <meta property="og:site_name" content="Bond Electric" />
+    <meta property="og:title" content="Welcome to Bond Electric" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://bondelectric.ca/images/logos/logo.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Bond Electric" />
+    <meta name="twitter:description" content="Welcome to Bond Electric" />
+    <meta name="twitter:image" content="http://bondelectric.ca/images/arash.jpg" />
+    <meta name="twitter:image:alt" content="Bond Electric" />
+
+
+
+
+
+    <!-- Site Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Colors CSS -->
+    <link rel="stylesheet" href="css/colors.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .error-msg {
+            display: none;
+        }
+
+        .error-msg-show {
+            display: block;
+            color: red;
+            font-weight: bold;
+            font-style: italic;
+        }
+        /* social links bar */
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            z-index: 99;
+        }
+
+            .icon-bar a {
+                display: block;
+                text-align: center;
+                padding: 16px;
+                transition: all 0.3s ease;
+                color: white;
+                font-size: 20px;
+            }
+
+                .icon-bar a:hover {
+                    background-color: #000;
+                }
+
+        .facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .instagram {
+            background: #9e00bb;
+            color: white;
+        }
+        /* end of social links bar */
+
+        /* dropdown menu */
+        /*.dropdown-menu {
+            display: block;
+            position: absolute;
+            width: max-content;
+            list-style: none;
+            background-color: navy;
+            border-radius: 1px 15px 0px 15px;
+        }*/
+        .menu-drop {
+        }
+
+        .show-menu {
+        }
+
+            .show-menu .dropdown-menu {
+                display: block;
+            }
+
+        .dropdown-menu li {
+            padding: 10px;
+        }
+
+            .dropdown-menu li:hover {
+                background: navy;
+            }
+        input[type=checkbox], input[type=radio] {
+            margin-right: 10px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="host_version">
+    <%-- Google tag manager --%>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSPJHVH"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <form id="form1" runat="server">
+
+        <!-- Modal -->
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header tit-up">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Customer Login</h4>
+                    </div>
+                    <div class="modal-body customer-box row">
+                        <div class="col-md-12">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="Login">
+                                    <div role="form" class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <asp:TextBox ID="txtUsername" runat="server" class="form-control" placeholder="Username"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <asp:TextBox ID="txtPass" runat="server" class="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <p id="errMsgHtml" runat="server" class="error-msg">* Username/Password is incorrect,Please make sure you have a correct one</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-10">
+                                                <button id="btnSubmit" onserverclick="BtnSubmit_OnClick" runat="server" class="btn btn-light btn-radius btn-brd grd1">
+                                                    Submit
+								
+                                                </button>
+                                                <a class="for-pwd" href="javascript:;">Forgot your password?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="Registration">
+                                    <div role="form" class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <input class="form-control" placeholder="Name" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <input class="form-control" id="email" placeholder="Email" type="email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <input class="form-control" id="mobile" placeholder="Mobile" type="email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <input class="form-control" id="password" placeholder="Password" type="password">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-10">
+                                                <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                                    Save &amp; Continue
+								
+                                                </button>
+                                                <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                                    Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOADER -->
+        <div id="preloader">
+            <div class="loading">
+                <div class="finger finger-1">
+                    <div class="finger-item">
+                        <span></span><i></i>
+                    </div>
+                </div>
+                <div class="finger finger-2">
+                    <div class="finger-item">
+                        <span></span><i></i>
+                    </div>
+                </div>
+                <div class="finger finger-3">
+                    <div class="finger-item">
+                        <span></span><i></i>
+                    </div>
+                </div>
+                <div class="finger finger-4">
+                    <div class="finger-item">
+                        <span></span><i></i>
+                    </div>
+                </div>
+                <div class="last-finger">
+                    <div class="last-finger-item"><i></i></div>
+                </div>
+            </div>
+        </div>
+        <!-- END LOADER -->
+
+        <span name="bondelectric logo" itemscope itemtype="http://schema.org/LocalBusiness">
+            <header class="header header_style_01">
+                <nav class="megamenu navbar navbar-default">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand">
+                                <img itemprop="image" src="images/logos/logo.png" alt="bondelectric company" style="width: 10%;"></a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                           <%-- <ul class="nav navbar-nav">
+                                <li><a class="active" href="default.aspx">Home</a></li>
+                                <li class="menu-drop"><a>Services </a>
+                                    <ul id="serviceMenuHtml" runat="server" class="dropdown-menu">
+                                    </ul>
+                                </li>
+                                <li><a href="information.aspx">information</a></li>
+                                <li><a href="news.aspx">news</a></li>
+                                <li><a href="faq.aspx">FAQ</a></li>
+                                <li><a href="about.aspx">About</a></li>
+                                <li class="menu-drop"><a>Gallery</a>
+                                    <ul id="galleryMenuHtml" runat="server" class="dropdown-menu">
+                                    </ul>
+                                </li>
+                                <li><a href="contact.aspx">Contact</a></li>
+                            </ul>--%>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a class="btn-light btn-radius btn-brd log" href="#" data-toggle="modal" data-target="#login"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div id="socialsHtml" runat="server" class="icon-bar">
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="google"><i class="fa fa-google"></i></a>
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <%--     
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <img src="images/logos/logo-hosting-light.png" alt="">
+                            <small>Web Hosting Template</small>
+                        </div>
+                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
+                        <p>Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Pricing</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Faq</a></li>
+							<li><a href="#">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">info@yoursite.com</a></li>
+                            <li><a href="#">www.yoursite.com</a></li>
+                            <li>PO Box 16122 Collins Street West Victoria 8007 Australia</li>
+                            <li>+61 3 8376 6284</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Social</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fa fa-facebook"></i> 22.543 Likes</a></li>
+                            <li><a href="#"><i class="fa fa-github"></i> 128 Projects</a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i> 12.860 Followers</a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i> 3312 Shots</a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i>3331 Pins</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->--%>
+        </div>
+   
+            <div class="copyrights">
+                <div class="container">
+                    <div class="footer-distributed">
+                        <div class="footer-left">
+                            <p class="footer-company-name">All Rights Reserved. &copy; 2019 <a href="#">Farhad Taheri</a></p>
+                        </div>
+                        <div class="footer-left">
+                            <h1 itemprop="image" class="footer-company-name" style="float: left; font-size: 12px; padding: 25px 0;"><a href="https://bondelectric.ca">Bond electric Inc</a> </h1>
+                            <h1 itemprop="image" class="footer-company-name" style="float: left; font-size: 12px; padding: 25px 0;"><a href="https://bondelectric.ca">bondelectric (bond electric)</a></h1>
+                        </div>
+                        <div class="footer-right">
+                            <div>
+                                <input placeholder="Subscribe our newsletter.." name="search">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyrights -->
+
+            <meta itemprop="telephone" content="+16475302704">
+            <meta itemprop="ratingValue" content="9">
+            <meta itemprop="author" content="Farhad Taheri(Decoton Co.)">
+            <meta itemprop="bestRating" content="9.8">
+            <meta itemprop="worstRating" content="8.9">
+        </span></span>
+    <meta itemprop="email" content="info@bondelectric.ca">
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <meta itemprop="streetAddress" content="6375A Yonge St Suite 201">
+            <meta itemprop="addressLocality" content="Richmond Hill">
+            <meta itemprop="addressRegion" content="Ontario">
+            <meta itemprop="addressCountry" content="Canada">
+            <meta itemprop="postalCode" content="M2M 3X9">
+        </span>
+        <span itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+            <span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+                <meta itemprop="name" content="Monday-Friday">
+            </span></span>
+        <meta itemprop="url" content="http://www.bondelectric.ca/">
+        <meta itemprop="ratingValue" content="9.8">
+        <meta itemprop="bestRating" content="9.8">
+        <meta itemprop="worstRating" content="8.9">
+        <meta itemprop="ratingCount" content="9">
+        </span></span><!--  end copyrights  -->
+
+        <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+        <%-- dropdown menu --%>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".menu-drop").hover(
+                    // Mouse Over
+                    function () {
+                        $(this).addClass("show-menu");
+                    },
+                    // Mouse Out
+                    function () {
+                        $(this).removeClass("show-menu");
+                    });
+            });
+        </script>
+        <!-- ALL JS FILES -->
+        <script src="js/all.js"></script>
+        <!-- ALL PLUGINS -->
+        <script src="js/custom.js"></script>
+
+    </form>
+</body>
+</html>
